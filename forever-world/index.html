@@ -27,16 +27,30 @@
   <style>
     body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1a1a1a; }
     a { color: #0b57d0; }
-    .cta { display: inline-block; margin: 0.75rem 0; padding: 0.5rem 0.9rem; background: #111; color: #fff; text-decoration: none; border-radius: 4px; }
-    .cta:hover { background: #333; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.85rem 0 0.3rem; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; background: #111; color: #fff !important; text-decoration: none; border-radius: 4px; font-weight: 600; box-sizing: border-box; text-align: center; line-height: 1.25; white-space: normal; max-width: 100%; }
+    .cta.subscribe { background: #c00; }
+    .cta:hover { opacity: 0.92; }
+    .cta:focus-visible { outline: 3px solid #0b57d0; outline-offset: 2px; }
+    .cta-note { color: #555; font-size: 0.9rem; margin: 0.15rem 0 0; }
+    .feature-thumb { display: block; width: 100%; max-width: 28rem; height: auto; border-radius: 4px; margin: 0.35rem 0 0; }
     .meta { color: #555; font-size: 0.95rem; }
+    @media (max-width: 480px) {
+      .actions { flex-direction: column; align-items: stretch; }
+      .cta { width: 100%; min-width: 0; }
+    }
   </style>
 </head>
 <body>
   <p class="meta"><a href="../">← Tawleed hub</a> · Minecraft</p>
   <h1>I Started a Modded Hardcore Forever World (First 10 Days)</h1>
   <p>Days 1–10 in a modded hardcore Minecraft forever world: early risks, starter house, food pressure, and trying not to soft-lock the run. Not a completed End fight — just the setup that decides whether the forever world lasts.</p>
-  <p><a class="cta" href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch on YouTube</a></p>
+  <a href="https://www.youtube.com/watch?v=jcpRRjk8quQ"><img class="feature-thumb" src="https://i.ytimg.com/vi/jcpRRjk8quQ/hqdefault.jpg" width="480" height="360" alt="Forever World, first 10 days — watch on YouTube" /></a>
+  <p class="actions">
+    <a class="cta" href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch on YouTube</a>
+    <a class="cta subscribe" href="https://www.youtube.com/@tawleed?sub_confirmation=1">Subscribe on YouTube</a>
+  </p>
+  <p class="cta-note">Watch opens this episode. Subscribe opens the Tawleed channel — dry commentary, same forever world.</p>
   <h2>What this episode is for</h2>
   <ul>
     <li>Modded hardcore first-10-days survival</li>
@@ -45,6 +59,10 @@
   </ul>
   <h2>Related</h2>
   <p><a href="../beauty-in-simplicity/">Beauty in Simplicity — calm hardcore build session</a></p>
+  <p class="actions">
+    <a class="cta" href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch on YouTube</a>
+    <a class="cta subscribe" href="https://www.youtube.com/@tawleed?sub_confirmation=1">Subscribe on YouTube</a>
+  </p>
   <p class="meta"><a href="https://www.youtube.com/@tawleed">@tawleed</a></p>
 </body>
 </html>
