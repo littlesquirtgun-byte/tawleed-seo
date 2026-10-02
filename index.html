@@ -30,6 +30,16 @@
     a { color: #0b57d0; }
     ul { padding-left: 1.2rem; }
     .meta { color: #555; font-size: 0.95rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.85rem 0 0.3rem; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; background: #111; color: #fff !important; text-decoration: none; border-radius: 4px; font-weight: 600; box-sizing: border-box; }
+    .cta.subscribe { background: #c00; }
+    .cta:hover { opacity: 0.92; }
+    .cta:focus-visible { outline: 3px solid #0b57d0; outline-offset: 2px; }
+    .cta-note { color: #555; font-size: 0.9rem; margin: 0.15rem 0 0; }
+    .feature-thumb { display: block; width: 100%; max-width: 28rem; height: auto; border-radius: 4px; margin: 0.35rem 0 0; }
+    @media (max-width: 480px) {
+      .actions { flex-direction: column; align-items: stretch; }
+    }
   </style>
 </head>
 <body>
@@ -37,16 +47,29 @@
   <p>Gaming channel: Vintage Story &amp; hardcore / modded Minecraft. Dry commentary. Not a wiki — just notes that point back to the videos.</p>
   <p class="meta"><a href="https://www.youtube.com/@tawleed">youtube.com/@tawleed</a> · <a href="https://www.twitch.tv/tawleed">Twitch</a> · <a href="https://www.tiktok.com/@tawleed">TikTok</a></p>
 
+  <p>Forever World is the current hardcore Minecraft series: one modded save, first 10 days, no death reset.</p>
+  <a href="https://www.youtube.com/watch?v=jcpRRjk8quQ"><img class="feature-thumb" src="https://i.ytimg.com/vi/jcpRRjk8quQ/hqdefault.jpg" width="480" height="360" alt="Forever World, first 10 days — watch on YouTube" /></a>
+  <p class="actions">
+    <a class="cta subscribe" href="https://www.youtube.com/@tawleed?sub_confirmation=1">Subscribe on YouTube</a>
+    <a class="cta" href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch Forever World on YouTube</a>
+  </p>
+  <p class="cta-note">Subscribe opens the Tawleed channel. Watch opens the first-10-days episode.</p>
+
   <h2>Featured videos</h2>
   <ul>
-    <li><a href="./forever-world/">Modded Hardcore Minecraft — Forever World (First 10 Days)</a></li>
-    <li><a href="./beauty-in-simplicity/">The Beauty in Simplicity — Hardcore Modded Minecraft</a></li>
-    <li><a href="./most-important-build/">The Most Important Build in Vintage Story</a></li>
-    <li><a href="./msv-civ/">Survive Vintage Story Civilization by Maximizing Shareholder Value</a></li>
+    <li><a href="./forever-world/">Modded Hardcore Minecraft — Forever World (First 10 Days)</a> — <a href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch on YouTube</a></li>
+    <li><a href="./beauty-in-simplicity/">The Beauty in Simplicity — Hardcore Modded Minecraft</a> — <a href="https://www.youtube.com/watch?v=1Q8KTD4RhpQ">Watch on YouTube</a></li>
+    <li><a href="./most-important-build/">The Most Important Build in Vintage Story</a> — <a href="https://www.youtube.com/watch?v=dLMdx_zNyzA">Watch on YouTube</a></li>
+    <li><a href="./msv-civ/">Survive Vintage Story Civilization by Maximizing Shareholder Value</a> — <a href="https://www.youtube.com/watch?v=EEYoNrjtSGM">Watch on YouTube</a></li>
   </ul>
 
   <h2>By game</h2>
   <p><strong>Minecraft (hardcore / modded):</strong> <a href="./forever-world/">Forever World</a> · <a href="./beauty-in-simplicity/">Beauty in Simplicity</a></p>
   <p><strong>Vintage Story:</strong> <a href="./most-important-build/">Most Important Build</a> · <a href="./msv-civ/">MSV Civ</a></p>
+
+  <p class="actions">
+    <a class="cta subscribe" href="https://www.youtube.com/@tawleed?sub_confirmation=1">Subscribe on YouTube</a>
+    <a class="cta" href="https://www.youtube.com/watch?v=jcpRRjk8quQ">Watch Forever World on YouTube</a>
+  </p>
 </body>
 </html>
