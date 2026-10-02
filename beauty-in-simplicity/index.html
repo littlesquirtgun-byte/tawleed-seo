@@ -28,7 +28,7 @@
     body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1a1a1a; }
     a { color: #0b57d0; }
     .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.85rem 0 0.3rem; }
-    .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; background: #111; color: #fff !important; text-decoration: none; border-radius: 4px; font-weight: 600; box-sizing: border-box; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; background: #111; color: #fff !important; text-decoration: none; border-radius: 4px; font-weight: 600; box-sizing: border-box; text-align: center; line-height: 1.25; white-space: normal; max-width: 100%; }
     .cta.subscribe { background: #c00; }
     .cta:hover { opacity: 0.92; }
     .cta:focus-visible { outline: 3px solid #0b57d0; outline-offset: 2px; }
@@ -37,6 +37,7 @@
     .meta { color: #555; font-size: 0.95rem; }
     @media (max-width: 480px) {
       .actions { flex-direction: column; align-items: stretch; }
+      .cta { width: 100%; min-width: 0; }
     }
   </style>
 </head>
