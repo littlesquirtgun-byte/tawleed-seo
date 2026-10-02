@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://littlesquirtgun-byte.github.io/tawleed-seo/sitemap.xml
